@@ -16,23 +16,54 @@ div {
 
 /* Header */
 
-header {
+
+
+
+
+
+/* Navigation */
+
+
+.header {
   display: flex;
   background-color: white;
   width: 100%;
   color: #5f5f5f;
   font-size: 1rem;
-  padding-left: 4rem;
   padding-top: .66rem;
   padding-bottom: .66rem;
 }
 
-header img {
-  height: 1.5rem;
-  padding-left: .5rem;
-  padding-right: 1rem;
 
-}
+.logo img {
+    height: 5.3125rem;
+    width: 5.3125rem;
+    padding-left: .5rem;
+    padding-right: 1rem;
+ }
+
+ nav {
+   display: flex;
+   width: 100%;
+   background-color: white;
+   align-content: center;
+   text-align: center;
+   justify-content: space-around;
+ }
+
+ nav a {
+   color: #5f5f5f;;
+   text-decoration: none;
+   padding-top: .75rem;
+   padding-bottom: .75rem;
+ }
+
+ .menu {
+   display: none;
+ }
+
+
+
 
 /* Banner */
 
@@ -73,27 +104,6 @@ h4 {
 
 }
 
-/* Navigation */
-
- nav {
-   display: flex;
-   width: 100%;
-   background-color: white;
-   align-content: center;
-   text-align: center;
-   justify-content: space-around;
- }
-
- nav a {
-   color: #5f5f5f;;
-   text-decoration: none;
-   padding-top: .75rem;
-   padding-bottom: .75rem;
- }
-
- .menu {
-   display: none;
- }
 
 
 /* content */
