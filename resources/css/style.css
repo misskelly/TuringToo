@@ -1,8 +1,9 @@
 html,
 body {
-  font-size: 18px;
+  margin: 0;
+  font-size: 16px;
   font-family: Helvetica neue;
-  background-color: black;
+  background-color: White;
   line-height: inherit;
 }
 
@@ -71,46 +72,84 @@ div {
  }
 
 
-/* Banner */
+.collage {
+  width: 100%
+}
 
-#banner {
-  background-image: url("http://www.saintannesdayschool.com/wp-content/uploads/2017/08/campus_9.jpg");
-  min-height: 10rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-grow: 1;
+.cover-img {
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .heading {
-  background-color: White;
+  background-color: rgba(255,255,255,0.7);
   color: #5f5f5f;
-  line-height: 1;
-  max-width: 20rem;
+  text-align: right;
+  line-height: .9;
+  width: 40rem;
   height: auto;
   margin-top: 9rem;
   margin-bottom: 5rem;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  position: relative;
-
+  padding: .5rem 2rem;
+  position: absolute;
+  top: 130px;
+  right: 0;
 }
+
+/*.heading h3 {
+  background: transparent;
+  color: #5f5f5f;
+  text-align: left;
+  padding-bottom: .5rem;
+}*/
+
+.amp {
+  font-size: 100px;
+  letter-spacing: -10px;
+  font-family: 'Gaegu', cursive; 
+}
+
+.the {
+  font-size: 20px;
+}
+.lc {
+  letter-spacing: 5px;
+}
+
+
 
 h1 {
   font-family: Arial Black;
   font-style: normal;
   font-weight: 900;
-  font-size: 80px;
-  letter-spacing: -3px;
+  font-size: 40px;
+  border-bottom: 2px solid #9D9985;
 }
 
-#amp {
-  font-size: 50px;
-  margin: .5rem 5rem 0;
+h2 {
+  font-family: Helvetica neue;
+  font-size: 30px;
+  padding: 10px;
+  /*color: #036575;*/
+  letter-spacing: 15px;
 }
+
+.turing {
+  font-family: 'Cinzel', sans-serif;
+  letter-spacing: normal;
+  font-size: 90px;
+  text-shadow: 2px 2px 2px #ef3852;
+}
+
+
 h4 {
-  font-size: 2rem;
-  font-style: italic;
-
+  font-size: 56px;
+  font-family: 'Gaegu', cursive;
+  font-weight: 600;
+  color: #ef3852;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 
@@ -146,22 +185,11 @@ h4 {
 .intro {
   width: 50%
   display: block;
-
 }
-h2 {
-  font-family: Helvetica neue;
-  font-style: italic;
-  font-size: 66px;
-  letter-spacing: -3px;
-  background-color: white;
-  color: #036575;
-  text-align: left;
-  padding-top: 3rem;
-  padding-right: 3rem;
-  padding-bottom: 1rem;
-  padding-left: 3rem;
 
-}
+
+
+
 .intro p {
   background-color: #12f1fc;
   display: block;
@@ -175,11 +203,11 @@ h2 {
   margin: 0;
 }
 
-#collage img{
+/*#collage img{
   max-width: 100%;
   object-fit: contain;
 
-}
+}*/
 
 .infant-ECE {
   display: flex;
@@ -210,71 +238,103 @@ h2 {
 }
 
 h3 {
+  border-radius: 50px;
   font-family: Helvetica;
   font-weight: 900;
   font-size: 1.5rem;
   background-color:#036575;
   color: #12f1fc;
   text-align: center;
+
 }
 
 
 
-.afterprogram {
+
+/* Departments */
+.departments {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.departments .desktop {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: lightgrey;
+  width: 100%;
+  padding-bottom: 2rem;
 }
+
+.departments .desktop h2{
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.subject {
+  background-color: white;
+  width: 25%;
+  margin: .5rem;
+  border-radius: 5px;
+  border: 1px solid #lightgrey;
+  box-shadow: 0px 0px 5px #333, inset 0px 0px 2px #d0a832;
+}
+
+.subject img {
+  width: 100%;
+}
+
+.subject .content {
+  padding: 1rem;
+  text-align: center; 
+}
+
+.subject h3 {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+
 /* business info */
 
 .info {
   display: flex;
   justify-content: space-around;
+  background: #f9ae06;
 }
 
 .details {
-  width: 35%;
-  margin-top: 3rem;
-
+  width: 30%;
+  text-align: center;
 }
+
 .info .details h5{
-  padding-left: 1rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
   color: #5f5f5f;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
 .info .details p {
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
+form {
+    padding-top: 1rem;
+    padding-right: 5rem;
+    padding-left: 2rem;
+}
 
 footer {
+
+  padding-top: 4rem;
   color: #5f5f5f;
-  height: 5rem;
+  height: 3rem;
   text-align: left;
-
-
 }
 
-@media only screen and (max-width: 1024px){
 
-  body {
-    font-size: 16px;
-  }
-
-  .fullmenu {
-    display: none;
-  }
-
-  .menu {
-    display: block;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .program{
-    width: 47%;
-  }
-
-}
